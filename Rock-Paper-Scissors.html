@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper Scissors</h1>
+            
+            <div id="score" class="score">
+                <div class="player-score">
+                    <p>Player: <span id="player">0</span></p>
+                </div>
+                <div class="computer-score">
+                    <p>Computer: <span id="computer">0</span></p>
+                </div>
+            </div>
+            <h2>Make Your Choice!</h2>
+            <div class="options">
+                
+                <div class="circle">
+                    <img src="assets/images/hand-rock-regular.svg" class="icon option hand-rock" id="Rock" width="100px" height="100px" alt="hand rock">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/hand-paper-regular.svg" class="icon option hand-paper" id="Paper" width="100px" height="100px" alt="hand paper">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/hand-scissors-regular.svg" class="icon option hand-scissors" id="Scissors" width="100px" height="100px" alt="hand scissors">
+                </div>
+            </div>
+
+            <div class="pop-up">
+                <div id="result" class="pop-up_content">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th colspan = "2">
+                                  <h1 class = "win-message">You Win!</h1>
+                              </th>
+                          </tr>
+                          <tr>
+                              <td style="text-align:right;"><h2>Player</h2></td>
+                              <td style="text-align: center;"><h2>Computer</h2></td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><h3 class ="user__score">0</h3></td>
+                              <td><h3 class ="cpu__score">0</h3></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <button id="reset">Close Window</button>
+                </div>
+            </div>
+            <div class="round__popUp">
+                <div class="win-message round__winner">
+                    <h1>You Win The Round!</h1>
+                    <p>Computer's Choice</p>
+                </div>
+            
+            </div>
+        </header>
+    </div>
+   
+    
+    <script src="assets/app2.js"></script>
+</body>
+</html>
