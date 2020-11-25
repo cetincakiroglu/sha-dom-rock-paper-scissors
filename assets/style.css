@@ -1,0 +1,210 @@
+body{
+    font-family: 'Goldman', cursive;
+    font-size: 16px;
+    display:flex;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 5%;
+    background-color:#bdb8b8;
+}
+
+/*
+colors
+background --> #bdb8b8
+greenish -->  #34BFA6
+yellow --> #F29441
+orange --> #F27649
+red --> #D94E41
+
+*/
+
+.container {
+    width: 80%;
+    height: 70%;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 6vh;
+    
+}
+
+#score {
+    line-height: 2vh;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-top: 6vh;
+    margin: 0 auto;
+}
+
+.options {
+    padding-top: 10vh;
+    /*FIX ALIGNMENT*/
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.icon.option {
+    padding: 2rem;
+    cursor: pointer;
+    margin: 10px;
+   
+}
+
+.option:hover {
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+   
+}
+
+.circle {
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 4vh;
+}
+
+.header {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.score {
+    height: 15vh;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.player-score {
+    border:1px solid transparent;
+    padding-bottom: 1.8vh;
+    height: 5vh;
+    background-color:#241E26;
+    color:#fff
+}
+
+.computer-score {
+    border:1px solid transparent;
+    padding-bottom: 1.8vh;
+    height: 5vh;
+    background-color:#F27649;
+    color:#fff
+}
+
+
+
+table {
+    width: 100%;
+}
+
+table h2 {
+    font-size: 2rem;
+}
+
+table h3 {
+    font-size: 4rem;
+    font-weight: lighter;
+   
+}
+
+.user__score{
+    padding-left: 40%;
+}
+
+button {
+    font-family: 'Goldman', cursive;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background: #f29441;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #241E26;
+    color: #fff; 
+}
+
+
+.pop-up_content {
+   border-radius: 5px;
+   background:rgb(255, 255, 255);
+   text-align: center;
+   width: 40%; 
+   padding: 2%;
+   margin: 20% auto;
+   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.75), 0 5px 20px rgba(0,0,0,0.75);
+   animation-name: pop-up-window;
+   animation-duration: .5s;
+}
+
+.pop-up {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.3);
+}
+
+.round__popUp {
+    font-size: 1rem;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.3);
+}
+
+.round__winner {
+    border-radius: 5px;
+    background:rgb(255, 255, 255);
+    text-align: center;
+    width: 40%; 
+    padding: 2%;
+    margin: 20% auto;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.75), 0 5px 20px rgba(0,0,0,0.75);
+    animation-name: anim-round;
+    animation-duration: .5s;
+}
+
+@keyframes anim-round{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } 
+}
+
+ @keyframes pop-up-window {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 850px){
+   #result{
+       width: auto;
+   }
+}
+
